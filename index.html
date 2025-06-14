@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List with Filter Options</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col items-center p-4">
+    <div class="w-full max-w-md bg-white rounded-lg shadow-md p-6">
+        <h1 class="text-2xl font-bold text-center mb-4">To-Do List</h1>
+        
+        <!-- Input Form -->
+        <div class="flex flex-col gap-2 mb-4">
+            <div class="flex flex-col gap-2">
+                <input type="text" id="taskInput" placeholder="Add a new task" class="flex-1 p-2 border rounded">
+                <div class="flex gap-2">
+                    <input type="date" id="dueDateInput" class="p-2 border rounded w-1/2">
+                    <select id="priorityInput" class="p-2 border rounded w-1/2">
+                        <option value="">Select Priority</option>
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </div>
+            </div>
+            <button id="addTaskBtn" class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Add Task</button>
+        </div>
+
+        <!-- Filter Buttons and Counter -->
+        <div class="flex justify-between mb-4">
+            <div class="flex gap-2">
+                <button id="allFilter" class="filter-btn bg-gray-200 p-2 rounded hover:bg-gray-300">All (<span id="allCount">0</span>)</button>
+                <button id="activeFilter" class="filter-btn bg-gray-200 p-2 rounded hover:bg-gray-300">Active (<span id="activeCount">0</span>)</button>
+                <button id="completedFilter" class="filter-btn bg-gray-200 p-2 rounded hover:bg-gray-300">Completed (<span id="completedCount">0</span>)</button>
+            </div>
+            <button id="clearCompletedBtn" class="bg-red-500 text-white p-2 rounded hover:bg-red-600">Clear Completed</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList" class="space-y-2"></ul>
+    </div>
+    <script src="script.js"></script>
+  
+</body>
+</html>
