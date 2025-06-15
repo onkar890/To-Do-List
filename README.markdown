@@ -6,14 +6,14 @@ This is a fully functional To-Do List application built with HTML, Tailwind CSS,
 ## Instructions to Run the Project
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/onkar890/To-Do-List.git
    ```
 2. **Open the Application**:
    - Navigate to the project directory.
    - Open `index.html` in a web browser (no server required as it uses CDNs for Tailwind CSS and SortableJS).
 3. **Live Deployment**:
    - Deploy the `index.html` file to a static hosting service like GitHub Pages or Netlify.
-   - Example deployment link: [To-Do List Demo](https://<your-deployment-link>)
+   - Example deployment link: [To-Do List Demo](https://onkar890.github.io/To-Do-List/)
 
 ## Technologies Used
 - **HTML5**: Structure of the application.
