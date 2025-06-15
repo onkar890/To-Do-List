@@ -1,3 +1,10 @@
+ *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+ }
+
+ 
  .task-enter {
      opacity: 0;
      transform: translateY(-10px);
@@ -17,3 +24,4 @@
      opacity: 0;
      transition: opacity 300ms ease-out;
  }
+
